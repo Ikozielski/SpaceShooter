@@ -1,0 +1,12 @@
+Criar a camada de assets para a futura transição 
+Duplicar a room inicio (rm_jogo, em_tutorial)
+
+Importar a sprite do player
+Criar o objeto plaeyer
+Colocar ele na Room na camada correta 
+Testar o Jogo 
+
+Criar Sprite Tiro
+Objeto Tiro
+Camada Tiro 
+Sempre que o Jogador apertar espaço, tem que sair um tiro da posição do player 
