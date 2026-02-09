@@ -36,6 +36,7 @@
   "name":"SpaceShooter",
   "resources":[
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
