@@ -10,3 +10,13 @@ Criar Sprite Tiro
 Objeto Tiro
 Camada Tiro 
 Sempre que o Jogador apertar espaço, tem que sair um tiro da posição do player 
+
+Criar o power up do tiro 
+Colocar o power up no level 
+Sprite e objeto do power up
+Colisao do player com o power up 
+Depois de colidir, destruir o power up
+Aumentar o level do player
+
+Importar Vidas e Escudos (Sprite)
+Esses não terão objetos
