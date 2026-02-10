@@ -43,6 +43,7 @@
   "name":"SpaceShooter",
   "resources":[
     {"id":{"name":"Projeto-Exercicios","path":"notes/Projeto-Exercicios/Projeto-Exercicios.yy",},},
+    {"id":{"name":"obj_escudo","path":"objects/obj_escudo/obj_escudo.yy",},},
     {"id":{"name":"obj_explosao_tiro","path":"objects/obj_explosao_tiro/obj_explosao_tiro.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_powerUp","path":"objects/obj_powerUp/obj_powerUp.yy",},},
@@ -56,6 +57,7 @@
     {"id":{"name":"spr_background_2","path":"sprites/spr_background_2/spr_background_2.yy",},},
     {"id":{"name":"spr_background_3","path":"sprites/spr_background_3/spr_background_3.yy",},},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
+    {"id":{"name":"spr_escudo_ativo","path":"sprites/spr_escudo_ativo/spr_escudo_ativo.yy",},},
     {"id":{"name":"spr_escudo","path":"sprites/spr_escudo/spr_escudo.yy",},},
     {"id":{"name":"spr_explosao_tiro","path":"sprites/spr_explosao_tiro/spr_explosao_tiro.yy",},},
     {"id":{"name":"spr_foreground","path":"sprites/spr_foreground/spr_foreground.yy",},},

@@ -16,13 +16,20 @@ escudos = 3;
 //Level do Tiro 
 level_tiro = 0;
 
+//Váriavel pra saber se tenho meu escudo 
+meuEscudo = noone;
+
+tempo_invencivel = game_get_speed(gamespeed_fps);
+timer_invencivel = 0; 
+
 #endregion
 
 #region Métodos
 //Método de controlar o player 
 
 controla_player = function(){
-
+	timer_invencivel--
+	
 	var _cima, _baixo, _esquerda, _direita, _atirar;
 	_cima = keyboard_check(ord("W")) or keyboard_check(vk_up);
 	_baixo = keyboard_check(ord("S")) or keyboard_check(vk_down);
@@ -112,14 +119,24 @@ desenha_icone = function(_icone = spr_icone_vida, _quantidade = 1, _altura){
 
 //Método para perder vida
 perde_vida = function(){
+	if(timer_invencivel > 0) return;
+	
 	if (vidas >= 0){
 		vidas--;	
+		timer_invencivel = tempo_invencivel;
 	} else{
 		show_message("Morreu");
 		game_restart();
 	}
-	
+}
 
+usa_escudo = function(){
+	if (escudos > 0 && meuEscudo == noone){
+		alarm[0] = game_get_speed(gamespeed_fps);
+		escudos--;
+		meuEscudo = instance_create_layer( x, y, "Escudo", obj_escudo);
+
+	}
 }
 
 #endregion

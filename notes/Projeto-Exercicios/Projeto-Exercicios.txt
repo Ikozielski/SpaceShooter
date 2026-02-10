@@ -30,3 +30,13 @@ Importe a Sprite da particula do tiro
 Cria um objeto para ser a explosao do tiro
 Faça o power up instanciar essa explosao na posição dele
 
+
+Quando eu apertar a tecla E, eu gasto 1 de escudo 
+
+Quando a animação do escudo terminar
+Ele para a animação dele (image_speed = 0)
+Quando eu apertar a letra E, ele vai criar um escudo na minha posicao 
+
+Criar um timer de invencibilidade 1 segundo 
+O player só pode perder vida se ele não está invencível 
+Ele não está incenvível se o timer de invencibilidade for <=0 
