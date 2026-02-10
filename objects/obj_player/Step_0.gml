@@ -14,6 +14,12 @@ controla_player();
 if(keyboard_check_released(vk_tab)) global.debug = !global.debug;
 
 
+//Sempre que eu apertar enter, o jogador perder 1 de vida
+if (keyboard_check_released(vk_enter)) perde_vida();
+
+
+
+
 //Se eu apertei para baixo o level do tiro aumenta
 
 //if (keyboard_check_pressed(vk_down)){

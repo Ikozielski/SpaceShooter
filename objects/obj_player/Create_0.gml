@@ -9,8 +9,9 @@ espera_tiro = 10;
 timer_tiro = 0;
 
 //Vidas
-
+vidas = 5;
 //Escudo
+escudos = 3;
 
 //Level do Tiro 
 level_tiro = 0;
@@ -93,4 +94,32 @@ ganha_level_tiro = function (){
 	if(level_tiro < global.maxLevel) level_tiro++;
 	
 }
+
+desenha_icone = function(_icone = spr_icone_vida, _quantidade = 1, _altura){
+
+	draw_text(10, display_get_gui_height() - 150, "Vidas: ");
+	draw_text(10, display_get_gui_height() - 85, "Escudos: ");
+
+	var _espaco = 0;
+
+
+	repeat(_quantidade){
+		draw_sprite_ext(_icone,0, 20 + _espaco, _altura, 1,1,0,c_white,1);
+		_espaco += 25;
+	
+	}
+}
+
+//Método para perder vida
+perde_vida = function(){
+	if (vidas >= 0){
+		vidas--;	
+	} else{
+		show_message("Morreu");
+		game_restart();
+	}
+	
+
+}
+
 #endregion

@@ -20,3 +20,13 @@ Aumentar o level do player
 
 Importar Vidas e Escudos (Sprite)
 Esses não terão objetos
+
+
+// Sempre que eu apertar enter, o jogador perder 1 de vida
+
+// Se o jogador estiver com 0 ou menos vida, ele é destruido
+
+Importe a Sprite da particula do tiro
+Cria um objeto para ser a explosao do tiro
+Faça o power up instanciar essa explosao na posição dele
+
