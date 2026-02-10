@@ -1,6 +1,5 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-if (meuEscudo != noone) {
-    meuEscudo.image_speed = -1;
-}
+
+if(y > 512) instance_destroy();

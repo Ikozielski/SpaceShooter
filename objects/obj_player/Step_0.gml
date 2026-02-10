@@ -30,6 +30,8 @@ if(instance_exists(meuEscudo)){
 
 
 
+
+
 //Se eu apertei para baixo o level do tiro aumenta
 
 //if (keyboard_check_pressed(vk_down)){

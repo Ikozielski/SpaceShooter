@@ -40,3 +40,11 @@ Quando eu apertar a letra E, ele vai criar um escudo na minha posicao
 Criar um timer de invencibilidade 1 segundo 
 O player só pode perder vida se ele não está invencível 
 Ele não está incenvível se o timer de invencibilidade for <=0 
+
+Importar a sprite do inimigo 1
+Criar  o objeto do inimigo 1 
+Criar uma camada para os inimigos
+Importar a sprite do tiro do inimigo 1
+Criar o objeto tiro do inimigo 1 
+Fazer o inimigo 1 atirar depois de 2 Segundos 
+

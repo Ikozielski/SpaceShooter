@@ -1,6 +1,4 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-if (meuEscudo != noone) {
-    meuEscudo.image_speed = -1;
-}
+obj_player.meuEscudo = noone;
