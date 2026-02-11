@@ -17,15 +17,15 @@ if(keyboard_check_released(vk_tab)) global.debug = !global.debug;
 //Sempre que eu apertar enter, o jogador perder 1 de vida
 if (keyboard_check_released(vk_enter)) perde_vida();
 
-if(keyboard_check_released(ord("E"))) usa_escudo();
 
 
-if(instance_exists(meuEscudo)){
-	meuEscudo.x = x;
-	meuEscudo.y = y;	
-} else {
-	meuEscudo = noone;
-}
+
+//if(instance_exists(meuEscudo)){
+//	meuEscudo.x = x;
+//	meuEscudo.y = y;	
+//} else {
+//	meuEscudo = noone;
+//}
 
 
 

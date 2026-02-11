@@ -14,13 +14,14 @@ vidas = 5;
 escudos = 3;
 
 //Level do Tiro 
-level_tiro = 0;
+level_tiro = 1;
 
 //Váriavel pra saber se tenho meu escudo
 meuEscudo = noone;
 
 tempo_invencivel = game_get_speed(gamespeed_fps) * 2;
 timer_invencivel = 0; 
+
 
 #endregion
 
@@ -60,6 +61,10 @@ controla_player = function(){
 	//if (_esquerda) x -= velocidade;
 	//if (_direita) x += velocidade;
 	
+	if(keyboard_check_released(ord("E"))) usa_escudo();
+	
+	com_escudo();
+
 	timer_tiro--;
 	//if(_cima) level_tiro = 1;
 	//if (_baixo) level_tiro = 2;
@@ -141,5 +146,14 @@ usa_escudo = function(){
 		timer_invencivel = tempo_invencivel;
 	}
 }
+com_escudo = function(){
+	if(instance_exists(meuEscudo)){
+		meuEscudo.x = x;
+		meuEscudo.y = y;	
+	} else {
+		meuEscudo = noone;
+	}
+}
+
 
 #endregion

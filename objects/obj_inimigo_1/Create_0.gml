@@ -4,3 +4,8 @@
 hspeed = random_range(-2, 2);
 
 alarm[0] = game_get_speed(gamespeed_fps) * 2;
+
+atirando = function(){
+	var _tiro = instance_create_layer(x, y, "Projeteis", obj_tiro_inimigo_1);
+
+}
