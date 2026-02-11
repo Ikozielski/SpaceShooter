@@ -57,4 +57,11 @@ Fazer o inimigo atirar novamente depois de 1s  - Já fiz antes dele pedir
 Enquanto o jogador estiver com o escudo, ele está invencivel  - Já fiz antes dele pedir
 Fazer o tiro do inimido tambem colidir com o escudo do player   - Já fiz antes dele pedir
 
+Importar a sprite da explosao do Inimigo 
+Criar o objeto da Expolsao
+Fazer o inimigo colidir com o player e com o escudo 
+Se o inimigo colidir com o player, ele se destroi e tira vida do player,  se colidir com o escudo, apenas se destroi
 
+Fazer o inimigo tomar bala 
+
+Fazer o tiro do player criar a particula dele 

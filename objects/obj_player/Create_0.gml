@@ -62,6 +62,7 @@ controla_player = function(){
 	//if (_direita) x += velocidade;
 	
 	if(keyboard_check_released(ord("E"))) usa_escudo();
+	if(keyboard_check_released(ord("R"))) game_restart();
 	
 	com_escudo();
 
