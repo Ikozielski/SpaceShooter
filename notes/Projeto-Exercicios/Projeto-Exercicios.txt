@@ -65,3 +65,7 @@ Se o inimigo colidir com o player, ele se destroi e tira vida do player,  se col
 Fazer o inimigo tomar bala 
 
 Fazer o tiro do player criar a particula dele 
+
+Reiniciar o alarme das waves em 350 framase e aumentar o valor do indice, para mudar as waves de inimigos 
+
+

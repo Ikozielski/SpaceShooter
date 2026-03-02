@@ -1,0 +1,11 @@
+/// @description Inserir descrição aqui
+// Você pode escrever seu código neste editor
+
+
+
+if(indice < array_length(waves) - 1){
+	show_debug_message(indice)
+	layer_sequence_create("Seq_Inimigos", 0, 0, waves[indice]);
+	indice++;
+	alarm[0] = intervaloSequencia;
+} 
