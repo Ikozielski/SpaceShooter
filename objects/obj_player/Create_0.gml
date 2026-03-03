@@ -128,12 +128,13 @@ perde_vida = function(){
 	if (meuEscudo != noone) return;
 	if(timer_invencivel > 0) return;
 	
+	screenShake(10);
 	if (vidas > 0){
 		vidas--;	
 	//	timer_invencivel = tempo_invencivel;
 	} else{
-		show_message("Não tankou e foi de berço!");
-		game_restart();
+		instance_destroy();
+		screenShake(50);
 	}
 }
 

@@ -3,7 +3,7 @@
 
 vida = 10;
 
-carregando_tiro = game_get_speed(gamespeed_fps) * .5;
+carregando_tiro = game_get_speed(gamespeed_fps) * 2;
 timer_tiro = 0;
 
 contador_tiro = 0;
@@ -20,6 +20,7 @@ morrendo = function(){
 		vida -= 1;
 	} else{
 		sendo_destruido(obj_explosao_inimigo);
+		screenShake(20);
 		instance_destroy();
 	}
 }

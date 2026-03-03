@@ -15,6 +15,7 @@ atirando = function(){
 
 morrendo = function(){
 	sendo_destruido(obj_explosao_inimigo);
+	screenShake(30);
 	var _chance = random(100);
 	
 	if(_chance > 95){
