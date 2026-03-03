@@ -68,4 +68,8 @@ Fazer o tiro do player criar a particula dele
 
 Reiniciar o alarme das waves em 350 framase e aumentar o valor do indice, para mudar as waves de inimigos 
 
+Criar o Case do tiro com as duas sprites de tiro 
+Criar os objetos dos tiros do inimigo 3
 
+Inimigo 3 vai para o estado carregando se o contador de tiro não tiver passado de 3 
+Se passou ele vai pro estado "fugindo"

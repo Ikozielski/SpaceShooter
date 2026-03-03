@@ -1,4 +1,3 @@
-randomise();
 
 function bordaLimite() {
 
@@ -10,3 +9,4 @@ function sendo_destruido(_particula = obj_explosao_tiro){
 	instance_destroy();
 	instance_create_layer(x, y, "Particulas", _particula);
 }
+
