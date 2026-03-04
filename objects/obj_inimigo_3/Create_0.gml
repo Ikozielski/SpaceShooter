@@ -10,27 +10,43 @@ contador_tiro = 0;
 
 decidi_direcao = false;
 
+inicia_efeito_mola();
+inicia_efeito_dano();
+
 //variavel que controla os estados
 estado = "chegando";
 
 
 morrendo = function(){
-
+		
+	//Fazendo o efeito mola
+	efeito_mola(1.5, .5);
+	timer_efeito_dano(3);
+	
+	
+	
 	if (vida > 1){
 		vida -= 1;
+		play_audio(sfx_hit, 0, 0);
 	} else{
 		sendo_destruido(obj_explosao_inimigo);
+		play_audio(sfx_explosion,0, 0);
 		screenShake(20);
 		instance_destroy();
 	}
 }
 
 boss_foge = function(){
-	if (contador_tiro < 3){
-		estado = "carregando";
-	} else{
+	
+	if(instance_exists(obj_player)){
+		if (contador_tiro < 3){
+			estado = "carregando";
+		} else{
+			estado = "fugindo";
+		}
+	} else {
 		estado = "fugindo";
-	}
+	}	
 }
 	
 maquina_de_estados = function(){
@@ -68,6 +84,7 @@ maquina_de_estados = function(){
 			//Fazer ele checar se o player existe 
 			
 			if (instance_exists(obj_player)){
+				play_audio(sfx_laser2, 0, 0);
 				var _tiro = instance_create_layer(x, y, "Projeteis", obj_tiro1_inimigo_3);
 				_tiro.speed = 2;
 				_tiro.direction = _direcao;
@@ -83,10 +100,10 @@ maquina_de_estados = function(){
 			
 			_angulo = 245;
 			
-			
 			//Fazer o tiro b ir pra baixo, e depois voltar a carregar 
 			if (instance_exists(obj_player)){
 				repeat(3){
+					play_audio(sfx_laser2, 0, 0);
 					var _tiro = instance_create_layer(x, y, "Projeteis", obj_tiro2_inimigo_3);
 					_tiro.speed = 4;
 					_tiro.direction = _angulo;
@@ -98,6 +115,7 @@ maquina_de_estados = function(){
 		} break;
 		
 		case "fugindo":{
+			
 			if(!decidi_direcao){
 				hspeed = choose(-1, 1);
 				decidi_direcao = true;

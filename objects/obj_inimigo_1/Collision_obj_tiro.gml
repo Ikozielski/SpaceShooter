@@ -4,6 +4,9 @@
 
 morrendo();
 
-screenShake(5);
+screenShake(3);
 
 instance_destroy(other);
+
+
+

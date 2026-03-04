@@ -81,3 +81,9 @@ E se ele já estiver tremendo? Eu mudo o valor dele? Eu mexo no valor?
 
 Inimigo toma tiro a tela treme
 Inimigo Morre a tela treme mais 
+
+Player atirar faz um som
+Inimigo atirar, faz um som
+Som quando inimigo 3 Morrer - Adicionar pitch
+
+Som quando ativar / desativar o escudo

@@ -1,6 +1,11 @@
 /// @description 
 // Você pode escrever seu código neste editor
 
+//Parando de tocar qualquer audio e Tocando a musica do jogo
+audio_stop_all();
+//musica_fundo, é a uma variavel definida no player, pra poder controlar qual musica toca na rrom que o player está 
+audio_play_sound(musica_fundo, 0, 1);
+
 #region	Variáveis 
 velocidade = 2;
 
@@ -15,6 +20,8 @@ escudos = 3;
 
 //Level do Tiro 
 level_tiro = 1;
+
+inicia_efeito_dano();
 
 //Váriavel pra saber se tenho meu escudo
 meuEscudo = noone;
@@ -79,6 +86,7 @@ controla_player = function(){
 		
 		//Quando player atira, muda o tamanho dele 
 		efeito_mola(.8, 1.2);
+		play_audio(sfx_laser1, 0, 0);
 		
 		if(level_tiro == 1){
 			tiro_1();
@@ -138,6 +146,7 @@ perde_vida = function(){
 	if(timer_invencivel > 0) return;
 	
 	screenShake(10);
+	timer_efeito_dano(5);
 	
 	//Efeito ao tomar tiro
 	efeito_mola(2, .5);
@@ -148,12 +157,14 @@ perde_vida = function(){
 	//	timer_invencivel = tempo_invencivel;
 	} else{
 		instance_destroy();
+		instance_create_layer(x, y, "Particulas", obj_explosao_player);
 		screenShake(50);
 	}
 }
 
 usa_escudo = function(){
 	if (escudos > 0 && meuEscudo == noone){
+		play_audio(sfx_shieldUp, 0, 0);
 		escudos--;
 		
 		meuEscudo = instance_create_layer(x, y, "Escudo", obj_escudo);

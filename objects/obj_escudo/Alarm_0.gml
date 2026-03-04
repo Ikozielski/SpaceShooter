@@ -3,4 +3,4 @@
 
 image_speed = -1;
 
-
+play_audio(sfx_shieldDown, 0, 0);

@@ -19,6 +19,11 @@ if (keyboard_check_released(vk_enter)) perde_vida();
 
 retorna_efeito_mola(.4);
 
+contador_efeito_dano();
+
+
+
+
 //if(instance_exists(meuEscudo)){
 //	meuEscudo.x = x;
 //	meuEscudo.y = y;	
