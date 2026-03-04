@@ -22,6 +22,7 @@ meuEscudo = noone;
 tempo_invencivel = game_get_speed(gamespeed_fps) * 2;
 timer_invencivel = 0; 
 
+inicia_efeito_mola();
 
 #endregion
 
@@ -62,8 +63,12 @@ controla_player = function(){
 	//if (_direita) x += velocidade;
 	
 	if(keyboard_check_released(ord("E"))) usa_escudo();
-	if(keyboard_check_released(ord("R"))) game_restart();
 	
+	//Se eu apertei para baixo o level do tiro aumenta
+	if (keyboard_check_pressed(ord("L"))) level_tiro++;
+	
+	
+
 	com_escudo();
 
 	timer_tiro--;
@@ -71,6 +76,10 @@ controla_player = function(){
 	//if (_baixo) level_tiro = 2;
 	
 	if 	(_atirar && timer_tiro <= 0){
+		
+		//Quando player atira, muda o tamanho dele 
+		efeito_mola(.8, 1.2);
+		
 		if(level_tiro == 1){
 			tiro_1();
 		}else if (level_tiro == 2){
@@ -86,16 +95,16 @@ controla_player = function(){
 
 tiro_1 = function(){
 	var _tiro = instance_create_layer(x - 5 , y, "Projeteis", obj_tiro);
-		_tiro.vspeed = -10;
+		//_tiro.vspeed = -10;
 			
 
 }
 
 tiro_2 = function(){
 	var _tiro = instance_create_layer(x - 15, y, "Projeteis", obj_tiro);
-		_tiro.vspeed = -10;
+		//_tiro.vspeed = -10;
 		_tiro = instance_create_layer(x + 5 , y, "Projeteis", obj_tiro);
-		_tiro.vspeed = -10;
+		//_tiro.vspeed = -10;
 }
 
 tiro_3 = function(){
@@ -129,6 +138,11 @@ perde_vida = function(){
 	if(timer_invencivel > 0) return;
 	
 	screenShake(10);
+	
+	//Efeito ao tomar tiro
+	efeito_mola(2, .5);
+	retorna_efeito_mola(.4);
+	
 	if (vidas > 0){
 		vidas--;	
 	//	timer_invencivel = tempo_invencivel;
