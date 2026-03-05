@@ -3,8 +3,9 @@
 
 if (global.debug) draw_text(20, 20 ,"Level tiro: " + string(level_tiro));
 
+if(global.transicao) exit;
 
-	var _gui_height = display_get_gui_height();
+var _gui_height = display_get_gui_height();
 //Desenhando as vidas do Player
 
 

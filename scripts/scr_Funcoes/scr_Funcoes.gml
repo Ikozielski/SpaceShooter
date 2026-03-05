@@ -74,3 +74,22 @@ function play_audio(_audio, _prioridade = 0, _loops = 0, _ganho = undefined, _of
 function random_pitch(_valorPitch1 = .9, _valorPitch2 = 1.1){
 	return random_range(_valorPitch1, _valorPitch2);
 }
+
+function muda_room_transicao(){
+	room_goto(global.destino);
+	
+	//Parando todos os sons
+	audio_stop_all();
+}
+
+function transicao_entrada(_largura = room_width / 2, _altura = room_height / 2){
+	layer_sequence_create("Transicao", _largura,  _altura, sq_transicao1);
+}
+
+function transicao_saida(_largura = room_width / 2, _altura = room_height / 2){
+	layer_sequence_create("Transicao", _largura,  _altura, sq_transicao2);
+}
+
+function finalisa_transicao(){
+	global.transicao = false;
+}

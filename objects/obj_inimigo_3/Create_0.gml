@@ -77,6 +77,7 @@ maquina_de_estados = function(){
 		
 		//Estado Atirando 
 		case "atirando":{
+			if(global.transicao) exit;
 			
 			//Encontrando a direção do player
 			var _direcao = point_direction(x, y, obj_player.x, obj_player.y);
@@ -97,6 +98,7 @@ maquina_de_estados = function(){
 		} break;
 		
 		case "atirando2":{
+			if(global.transicao) exit;
 			
 			_angulo = 245;
 			

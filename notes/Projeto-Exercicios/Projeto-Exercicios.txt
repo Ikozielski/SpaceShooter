@@ -87,3 +87,14 @@ Inimigo atirar, faz um som
 Som quando inimigo 3 Morrer - Adicionar pitch
 
 Som quando ativar / desativar o escudo
+
+Completar o jogo: 
+Requisitos Obrigadtórios: (Depois posso fazer diferentes, se eu quiser)
+
+Criar um segundo inimigo
+Cirar mais um power up
+Deixar o jogo com a minha cara (KKK)
+Publicar na itch 
+Compartilhar 
+
+Prazo de finalização do jogo: Entre 3 e 7 Dias - Inicio: 05/03/2006 - Sexta Feira 

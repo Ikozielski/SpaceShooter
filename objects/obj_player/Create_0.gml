@@ -159,6 +159,8 @@ perde_vida = function(){
 		instance_destroy();
 		instance_create_layer(x, y, "Particulas", obj_explosao_player);
 		screenShake(50);
+		transicao_entrada(x,y);
+		global.transicao = true;
 	}
 }
 
@@ -181,6 +183,13 @@ com_escudo = function(){
 		meuEscudo = noone;
 	}
 }
+
+//Criando a transição na minha posição 
+layer_sequence_create("Transicao", x, y, sq_transicao2);
+
+//Avisando que o destino é a room inicial 
+global.destino = rm_inicio;
+
 
 
 #endregion

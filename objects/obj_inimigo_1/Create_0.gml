@@ -9,6 +9,7 @@ criado_em_sequencia = in_sequence;
 alarm[0] = game_get_speed(gamespeed_fps) * 2;
 
 atirando = function(){
+	if(global.transicao) exit;
 	var _tiro = instance_create_layer(x, y, "Projeteis", obj_tiro_inimigo_1);
 	play_audio(sfx_laser2,0,0);
 }

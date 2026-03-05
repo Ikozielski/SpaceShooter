@@ -7,7 +7,7 @@
 
 menu = ["Jogar", "Tutorial", "Sair"];
 
-atual = 1;
+atual = 0;
 
 margem = 40;
 
@@ -67,11 +67,16 @@ ativa_menu = function(){
 	switch(atual){
 			//Jogar
 			case 0: 
-			
+				transicao_entrada()
+				global.destino = rm_jogo;
+				global.transicao = 1;
 			break;
 			
 			// Tutorial
 			case 1:
+				transicao_entrada()
+				global.destino = rm_tutorial;
+				global.transicao = 1;
 			
 			break;
 			
