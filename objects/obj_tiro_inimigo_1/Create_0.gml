@@ -6,11 +6,12 @@ direction = 270;
 
 morrendo = function(){
 
-instance_destroy();
+	instance_destroy();
 
-//Criando a particula 
+	//Criando a particula 
 
-var _particula = instance_create_layer(x, y, layer, obj_explosao_tiro);
+	var _particula = instance_create_layer(x, y, layer, obj_explosao_tiro);
 
-_particula.image_angle = random(359);
+	_particula.image_angle = random(359);
+
 }

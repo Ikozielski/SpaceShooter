@@ -54,10 +54,10 @@ controla_player = function(){
 	//0 - 0 = 0 * velocidade = 0
 	//1 - 1 = 0 * velocidade = 0
 	
-	var _velocidadeH = (_direita - _esquerda) * velocidade;
+	var _velocidadeH = ((_direita - _esquerda) * velocidade) * global.velocidadeMaxima;
 	x += _velocidadeH;
 		
-	var _velocidadeV = (_baixo - _cima) * velocidade;
+	var _velocidadeV = ((_baixo - _cima) * velocidade) * global.velocidadeMaxima;
 	y += _velocidadeV;
 	
 	
@@ -121,7 +121,11 @@ tiro_3 = function(){
 }
 
 ganha_level_tiro = function (){
-	if(level_tiro < global.maxLevel) level_tiro++;
+	if(level_tiro < global.maxLevel) {
+		level_tiro++;
+	} else if(escudos < 7) {
+		escudos += 1;
+	}
 	
 }
 

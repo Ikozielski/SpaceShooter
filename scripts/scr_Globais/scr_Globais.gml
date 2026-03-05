@@ -6,3 +6,5 @@ global.debug = true;
 global.destino = rm_inicio;
 
 global.transicao = false;
+
+global.velocidadeMaxima = 1;

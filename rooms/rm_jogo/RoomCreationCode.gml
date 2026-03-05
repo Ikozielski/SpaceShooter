@@ -1,0 +1,3 @@
+
+
+global.velocidadeMaxima = 1;

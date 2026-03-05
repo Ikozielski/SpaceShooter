@@ -1,7 +1,4 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-
-if(y > 512 || y < -100 || x > 400 || x < -100) {
-	instance_destroy();
-}
+ficaNaRoom();

@@ -93,3 +93,18 @@ function transicao_saida(_largura = room_width / 2, _altura = room_height / 2){
 function finalisa_transicao(){
 	global.transicao = false;
 }
+
+function dropPowerUps(){
+	
+	var _chance = random(100);
+	
+	if(_chance > 95){
+		//Criando o PowerUp
+		_poderVida = instance_create_layer(x, y, layer, obj_powerUp_vida);
+	} else if(_chance > 70){
+		_poderTiroEscudo = instance_create_layer(x, y, layer, obj_powerUp);
+	} else if(_chance > 30 && global.velocidadeMaxima < 1.5){
+		_poderVelocidade = instance_create_layer(x, y, layer, obj_powerUp_velocidade);
+	}
+	
+}

@@ -9,9 +9,19 @@ criado_em_sequencia = in_sequence;
 alarm[0] = game_get_speed(gamespeed_fps) * 2;
 
 atirando = function(){
-	if(global.transicao) exit;
-	var _tiro = instance_create_layer(x, y, "Projeteis", obj_tiro_inimigo_1);
-	play_audio(sfx_laser2,0,0);
+	_angulo = 225;
+	
+	if (global.transicao) exit;
+		if (instance_exists(obj_player)){
+				repeat(30){
+					play_audio(sfx_laser2, 0, 0);
+					var _tiro = instance_create_layer(x, y, "Projeteis", obj_tiro_inimigo_2);
+					_tiro.speed = 4;
+					_tiro.direction = _angulo;
+					_tiro.image_angle = _angulo + 90;
+					_angulo += 25;
+				}
+		}
 }
 
 morrendo = function(){
@@ -24,6 +34,7 @@ morrendo = function(){
 	
 	sendo_destruido(obj_explosao_inimigo);
 	screenShake(30);
+	var _chance = random(100);
 	
 	dropPowerUps();
 }
