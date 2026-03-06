@@ -1,6 +1,6 @@
 {
   "$GMSequence":"v1",
-  "%Name":"sq_wave2_b",
+  "%Name":"sq_wave3",
   "autoRecord":true,
   "backdropHeight":512,
   "backdropImageOpacity":0.5,
@@ -24,7 +24,7 @@
     "resourceType":"KeyframeStore<MomentsEventKeyframe>",
     "resourceVersion":"2.0",
   },
-  "name":"sq_wave2_b",
+  "name":"sq_wave3",
   "parent":{
     "name":"Sequences",
     "path":"folders/Sequences.yy",

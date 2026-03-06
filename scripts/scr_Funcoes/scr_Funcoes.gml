@@ -104,7 +104,7 @@ function dropPowerUps(){
 	} else if(_chance > 60 && global.velocidadeMaxima < 1.5){
 		_poderVelocidade = instance_create_layer(x, y,  "PowerUp", obj_powerUp_velocidade);
 		
-	} else if(_chance > 20){
+	} else if(_chance > 50){
 		_poderTiroEscudo = instance_create_layer(x, y, "PowerUp", obj_powerUp);
 	} else{
 		_poderRuim = instance_create_layer(x, y, "PowerUp", obj_powerDown);

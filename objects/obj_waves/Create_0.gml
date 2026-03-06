@@ -7,7 +7,7 @@ indice = 0;
 
 //Criando um array com as minhas Waves
 
-waves = [sq_wave2, sq_wave2_b, sq_wave1];
+waves = [sq_wave1, sq_wave2, sq_wave3, sq_wave4, sq_wave5, sq_wave6, sq_wave7, sq_wave8, sq_wave9, sq_wave10];
 
 intervaloSequencia = game_get_speed(gamespeed_fps) * 5.8;
 

@@ -5,7 +5,7 @@ criado_em_sequencia = in_sequence;
 
 estados = "chegando";
 
-vida = 5;
+vida = 10;
 
 inicia_efeito_mola();
 inicia_efeito_dano();
@@ -23,7 +23,7 @@ atirando = function(){
 				repeat(30){
 					play_audio(sfx_laser2, 0, 0);
 					var _tiro = instance_create_layer(x, y, "Projeteis", obj_tiro_inimigo_2);
-					_tiro.speed = 4;
+					_tiro.speed = 5;
 					_tiro.direction = _angulo;
 					_tiro.image_angle = _angulo + 90;
 					_angulo += 25;
@@ -57,6 +57,9 @@ morrendo = function(){
 	
 }
 
+//Funciona se o inimigo for colocado direto na room, mas como vou fazer sequencias de waves
+//esse código vai me atrapalhar
+/*
 maquinaDeEstados = function(){
 	switch(estados){
 	
@@ -73,3 +76,4 @@ maquinaDeEstados = function(){
 			flutuar();
 	}
 }
+*/

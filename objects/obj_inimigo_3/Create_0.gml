@@ -40,7 +40,7 @@ morrendo = function(){
 boss_foge = function(){
 	
 	if(instance_exists(obj_player)){
-		if (contador_tiro < 6){
+		if (contador_tiro < 5){
 			estado = "carregando";
 		} else{
 			estado = "fugindo";

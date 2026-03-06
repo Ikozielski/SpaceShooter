@@ -13,10 +13,13 @@ velocidade = 2;
 espera_tiro = 10;
 timer_tiro = 0;
 
-//Vidas
+//Vidas - Max 7
 vidas = 5;
-//Escudo
+//Escudo - Max 7
 escudos = 3;
+//Boost de Velocidade - Max 5
+boost = 1;
+
 
 //Level do Tiro 
 level_tiro = 1;
@@ -131,8 +134,9 @@ ganha_level_tiro = function (){
 
 desenha_icone = function(_icone = spr_icone_vida, _quantidade = 1, _altura){
 
-	draw_text(10, display_get_gui_height() - 150, "Vidas: ");
-	draw_text(10, display_get_gui_height() - 85, "Escudos: ");
+	draw_text(10, display_get_gui_height() - 215, "Vidas: ");
+	draw_text(10, display_get_gui_height() - 150, "Escudos: ");
+	draw_text(10, display_get_gui_height() - 85, "Boost: ");
 
 	var _espaco = 0;
 
