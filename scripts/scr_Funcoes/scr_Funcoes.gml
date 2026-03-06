@@ -98,13 +98,49 @@ function dropPowerUps(){
 	
 	var _chance = random(100);
 	
-	if(_chance > 95){
+	if(_chance > 90){
 		//Criando o PowerUp
-		_poderVida = instance_create_layer(x, y, layer, obj_powerUp_vida);
-	} else if(_chance > 70){
-		_poderTiroEscudo = instance_create_layer(x, y, layer, obj_powerUp);
-	} else if(_chance > 30 && global.velocidadeMaxima < 1.5){
-		_poderVelocidade = instance_create_layer(x, y, layer, obj_powerUp_velocidade);
+		_poderVida = instance_create_layer(x, y, "PowerUp", obj_powerUp_vida);
+	} else if(_chance > 60 && global.velocidadeMaxima < 1.5){
+		_poderVelocidade = instance_create_layer(x, y,  "PowerUp", obj_powerUp_velocidade);
+		
+	} else if(_chance > 20){
+		_poderTiroEscudo = instance_create_layer(x, y, "PowerUp", obj_powerUp);
+	} else{
+		_poderRuim = instance_create_layer(x, y, "PowerUp", obj_powerDown);
 	}
 	
+}
+
+function iniciaFlutuar(){
+	incrementoVelocidade = .1;
+	velocidade = 1; 
+	direction = choose(45, 135, 225, 315);
+	speed = velocidade;
+}
+
+function flutuar(){
+	
+	// Laterais
+	if (x < 0) {
+	    x = -x;
+	    direction = 180 - direction;
+	    speed += incrementoVelocidade;
+	}
+	else if (x > room_width) {
+	    x = room_width - (x - room_width);
+	    direction = 180 - direction;
+	    speed += incrementoVelocidade;
+	}
+
+	// Topo
+	if (y < 0) {
+	    y = -y;
+	    direction = -direction;
+	    speed += incrementoVelocidade;
+	}
+	
+	if (y > room_height) {
+	    instance_destroy();
+	}
 }

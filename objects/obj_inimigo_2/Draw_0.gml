@@ -2,8 +2,5 @@
 // Você pode escrever seu código neste editor
 
 
-maquina_de_estados();
-
-
-retorna_efeito_mola();
-contador_efeito_dano();
+desenha_efeito_mola();
+desenha_efeito_dano(desenha_efeito_mola);

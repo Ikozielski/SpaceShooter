@@ -112,6 +112,11 @@ Criar outro power up (Com outro poder), - OK (4/4)
 	Poder 3: Aumenta a vida - Drop raro - Chance 5% - OK
 	Poder 4: Perde uma vida (fazendo a animação)  e um escudo e perde um level do tiro - OK 
 	
+P3	Vida 10 %      - Max 7 - Ganha uma vida e um escudo
+P2	Velocidade 30% - Max 5 - Ganha 0.1 de velocidade
+P1	Buff 40%       - Max 7 - Aumenta o poder de tiro
+P4	Debuff 20%             - Perde uma vida, um escudo, e dimui o poder de tiro
+	
 Fazer pelo menos 3 waves funcionais 
 Mexer no som (Se quiser)
 Melhorar o Tutorial

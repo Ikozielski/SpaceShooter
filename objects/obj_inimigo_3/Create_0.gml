@@ -1,7 +1,7 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-vida = 10;
+vida = 20;
 
 carregando_tiro = game_get_speed(gamespeed_fps) * 2;
 timer_tiro = 0;
@@ -33,16 +33,18 @@ morrendo = function(){
 		play_audio(sfx_explosion,0, 0);
 		screenShake(20);
 		instance_destroy();
+		dropPowerUps();
 	}
 }
 
 boss_foge = function(){
 	
 	if(instance_exists(obj_player)){
-		if (contador_tiro < 3){
+		if (contador_tiro < 6){
 			estado = "carregando";
 		} else{
 			estado = "fugindo";
+			dropPowerUps();
 		}
 	} else {
 		estado = "fugindo";

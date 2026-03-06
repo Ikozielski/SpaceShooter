@@ -3,8 +3,15 @@
 
 criado_em_sequencia = in_sequence;
 
+estados = "chegando";
+
+vida = 5;
+
+inicia_efeito_mola();
+inicia_efeito_dano();
 
 //hspeed = random_range(-2, 2);
+hspeed = -1;
 
 alarm[0] = game_get_speed(gamespeed_fps) * 2;
 
@@ -26,15 +33,43 @@ atirando = function(){
 
 morrendo = function(){
 	
-	var _camelo = random_pitch(.9, 1.1);
-	show_debug_message(_camelo);
+	//Fazendo o efeito mola
+	efeito_mola(1.5, .5);
+	timer_efeito_dano(3);
+	
+	if(vida > 1){
+		vida--;
+		play_audio(sfx_hit, 0, 0);
+	}else {
+		var _camelo = random_pitch(.9, 1.1);
+		show_debug_message(_camelo);
 
-	//Explodindo
-	play_audio(sfx_explosion, 0,0, , ,_camelo);
+		//Explodindo
+		play_audio(sfx_explosion, 0,0, , ,_camelo);
 	
-	sendo_destruido(obj_explosao_inimigo);
-	screenShake(30);
-	var _chance = random(100);
+		sendo_destruido(obj_explosao_inimigo);
+		screenShake(30);
+		var _chance = random(100);
 	
-	dropPowerUps();
+		dropPowerUps();
+		
+	}
+	
+}
+
+maquinaDeEstados = function(){
+	switch(estados){
+	
+		case "chegando":
+			if(x >= room_width / 2){
+				hspeed = -1.2;
+			} else {
+				hspeed = 0;
+				iniciaFlutuar();
+				estados = "flutuando"
+			} break;
+			
+		case "flutuando":
+			flutuar();
+	}
 }
