@@ -20,6 +20,7 @@ escudos = 3;
 //Boost de Velocidade - Max 3
 boost = 3;
 
+
 //Timer Boost
 tempoBoost = 0;
 boostTimer = 0;
@@ -29,6 +30,7 @@ boostTimer = 0;
 level_tiro = 1;
 
 inicia_efeito_dano();
+
 
 //Váriavel pra saber se tenho meu escudo
 meuEscudo = noone;
@@ -204,6 +206,10 @@ boostVelocidade = function(){
 	if(_boost && boost > 0){
 		vspeed = -5;
 		alarm[1] = game_get_speed(gamespeed_fps) * .3;
+		
+		//Soltar o rastro do boost
+		_rastroBoost = instance_create_layer(x, y, "Instancias", obj_rastro_boost);
+		
 	}
 }
 

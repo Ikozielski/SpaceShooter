@@ -124,7 +124,7 @@ Fazer o Debuff destruir se atirar nele - OK
 Fazer pelo menos 10 waves funcionais (10/10) - OK 
 
 Fazer o shifft dar um boost de velocidade - OK 
-Colocar uma animação para o boost
+Colocar uma animação para o boost - ok 
 	
 	
 Mexer no som (Se quiser)
