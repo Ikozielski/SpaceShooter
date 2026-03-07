@@ -21,7 +21,7 @@ retorna_efeito_mola(.4);
 
 contador_efeito_dano();
 
-
+boostVelocidade();
 
 
 //if(instance_exists(meuEscudo)){

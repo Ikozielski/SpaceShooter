@@ -5,7 +5,10 @@ instance_destroy();
 
 other.perde_vida();
 
-if(!other.timer_invencivel > 0) other.escudos--;
+if(!other.timer_invencivel > 0){
+	 other.escudos--;
+	 other.boost--;
+}
 
 //if (other.escudos >= 0) other.escudos--;
 if (other.level_tiro > 1) other.level_tiro--;

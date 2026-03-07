@@ -1,3 +1,5 @@
+|| - Salvar o "OU" pq meu teclado não tem 
+
 Criar a camada de assets para a futura transição 
 Duplicar a room inicio (rm_jogo, em_tutorial)
 
@@ -113,7 +115,7 @@ Criar outro power up (Com outro poder), - OK (4/4)
 	Poder 4: Perde uma vida (fazendo a animação)  e um escudo e perde um level do tiro - OK 
 	
 P3	Vida 10 %            - Max 7 - Ganha uma vida e um escudo
-P2	Velocidade/Boost 30% - Max 5 - Ganha 0.1 de velocidade e uma carga do Boost de Velocidade 
+P2	Velocidade/Boost 30% - Max 3 - Ganha 0.1 de velocidade e uma carga do Boost de Velocidade 
 P1	Buff 40%             - Max 7 - Aumenta o poder de tiro
 P4	Debuff 20%                   - Perde uma vida, um escudo, e dimui o poder de tiro
 	
@@ -121,9 +123,9 @@ Fazer o Debuff destruir se atirar nele - OK
 
 Fazer pelo menos 10 waves funcionais (10/10) - OK 
 
-Fazer o shifft dar um boost de velocidade 
-	Vou fazer o PowerUp de Velocidade Dar uma carga de Boost (Total 5), aí quando o player quiser pode dar um boost 
-	Se gastar um boost, quando o efeito acabar, a velocidade do player fica 0.1 mais lenta 
+Fazer o shifft dar um boost de velocidade - OK 
+Colocar uma animação para o boost
+	
 	
 Mexer no som (Se quiser)
 Melhorar o Tutorial

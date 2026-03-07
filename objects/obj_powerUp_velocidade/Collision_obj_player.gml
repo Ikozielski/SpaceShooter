@@ -9,6 +9,6 @@ var _particula = instance_create_layer(x,y,layer, obj_explosao_tiro);
 
 _particula.image_angle = random(359);
 
-other.boost++;
+if (other.boost < 3) other.boost++;
 
 show_debug_message(global.velocidadeMaxima);

@@ -17,8 +17,12 @@ timer_tiro = 0;
 vidas = 5;
 //Escudo - Max 7
 escudos = 3;
-//Boost de Velocidade - Max 5
-boost = 1;
+//Boost de Velocidade - Max 3
+boost = 3;
+
+//Timer Boost
+tempoBoost = 0;
+boostTimer = 0;
 
 
 //Level do Tiro 
@@ -49,6 +53,7 @@ controla_player = function(){
 	_esquerda = keyboard_check(ord("A")) or keyboard_check(vk_left);
 	_direita = keyboard_check(ord("D")) or keyboard_check(vk_right);
 	_atirar = keyboard_check(vk_space) or mouse_check_button(mb_left);
+
 	
 	//Fazendo a Movimentação Horizontal
 	//Velocidade Horizontal 
@@ -77,7 +82,7 @@ controla_player = function(){
 	//Se eu apertei para baixo o level do tiro aumenta
 	if (keyboard_check_pressed(ord("L"))) level_tiro++;
 	
-	
+	if (keyboard_check_pressed(ord("M"))) boost++;
 
 	com_escudo();
 
@@ -189,6 +194,16 @@ com_escudo = function(){
 		meuEscudo.y = y;	
 	} else {
 		meuEscudo = noone;
+	}
+}
+
+boostVelocidade = function(){
+	_boost = keyboard_check_pressed(vk_shift);
+	
+	
+	if(_boost && boost > 0){
+		vspeed = -5;
+		alarm[1] = game_get_speed(gamespeed_fps) * .3;
 	}
 }
 
