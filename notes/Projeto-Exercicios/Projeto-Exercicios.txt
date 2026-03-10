@@ -142,7 +142,7 @@ Sistema de Pontos
 	Destruir Power Down - 10 Pontos - OK 
  
  
-Melhorar o Tutorial
+Melhorar o Tutorial - OK
 
 Fazer um BOSS mesmo como final com 50 de vida  e varios ataques doidos, um boss que não vai embora e só ganha se matar ele 
 Mostrar a vida do boss

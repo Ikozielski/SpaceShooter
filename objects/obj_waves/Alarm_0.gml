@@ -5,6 +5,6 @@
 
 if(indice < array_length(waves)){
 	layer_sequence_create("Seq_Inimigos", 0, 0, waves[indice]);
-	indice++;
 	alarm[0] = intervaloSequencia;
+	indice++;
 } 

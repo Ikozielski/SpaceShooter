@@ -26,5 +26,5 @@ if(!global.transicao){
 	draw_text(225, 640, "    ESC - Voltar");
 
 	draw_set_font(-1);
-
+	
 }

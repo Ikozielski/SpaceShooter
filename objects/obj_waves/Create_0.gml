@@ -1,7 +1,7 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-indice = 0;
+indice = 8;
 
 //Criando a minha primeira Wave
 
@@ -16,3 +16,5 @@ intervaloSequencia = game_get_speed(gamespeed_fps) * 5.8;
 
 
 alarm[0] = game_get_speed(gamespeed_fps) /2;
+
+boss_spawnado = false;
