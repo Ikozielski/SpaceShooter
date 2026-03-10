@@ -5,7 +5,7 @@
 
 //Criando um array para as opções do menu
 
-menu = ["Jogar", "Tutorial", "Sair"];
+menu = ["Jogar", "Tutorial","Creditos", "Sair"];
 
 atual = 0;
 
@@ -80,8 +80,15 @@ ativa_menu = function(){
 			
 			break;
 			
+			//Creditos
+			case 2:
+				transicao_entrada()
+				global.destino = rm_creditos;
+				global.transicao = 1;
+			break;
+			
 			//Sair
-			case 2: game_end();
+			case 3: game_end();
 			
 			break;
 			

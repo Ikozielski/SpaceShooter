@@ -124,16 +124,30 @@ Fazer o Debuff destruir se atirar nele - OK
 Fazer pelo menos 10 waves funcionais (10/10) - OK 
 
 Fazer o shifft dar um boost de velocidade - OK 
-Colocar uma animação para o boost - ok 
-	
+Colocar uma animação para o boost - OK 
 	
 Mexer no som (Se quiser)
-Melhorar o Tutorial
+	Player toma dano - OK
+	Player da Dash - OK 
+	Pega PowerUp - OK 
+	Destrói PowerDown - OK
+	Mudar Música do Tutorial/Inicio  - OK 
+
 Sistema de Pontos 
+	Mostrar os Pontos
+	Pegar Power up - 50 Pontos
+	Destruir Power Down
+
+Melhorar o Tutorial
+
+Fazer um BOSS mesmo como final com 50 de vida  e varios ataques doidos, um boss que não vai embora e só ganha se matar ele 
 Mostrar a vida do boss
 
 Fazer um final para o jogo (pensei no jato sair por cima, e mostrar algo na tela) 
 
-Tirar os debugs/showmessage da tela 
+criar room de creditos 
+
+Tirar os debugs/showmessage da tela/Mudar a room inicial
+
 
 

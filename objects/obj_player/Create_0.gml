@@ -4,8 +4,22 @@
 //Parando de tocar qualquer audio e Tocando a musica do jogo
 audio_stop_all();
 //musica_fundo, é a uma variavel definida no player, pra poder controlar qual musica toca na rrom que o player está 
-audio_play_sound(musica_fundo, 0, 1);
+switch (room){
 
+	case rm_inicio:{
+		play_audio(snd_intro, 0, 1);
+	} break
+	
+	case rm_tutorial:{
+		play_audio(snd_tutorial, 0, 1);
+	} break
+	
+	case rm_jogo:{
+		audio_play_sound(musica_fundo, 0, 1);
+	} break
+	
+}
+	
 #region	Variáveis 
 velocidade = 2;
 
@@ -169,6 +183,7 @@ perde_vida = function(){
 	
 	if (vidas > 0){
 		vidas--;	
+		play_audio(sfx_player_hit, 0, 0);
 	//	timer_invencivel = tempo_invencivel;
 	} else{
 		instance_destroy();
@@ -205,6 +220,7 @@ boostVelocidade = function(){
 	
 	if(_boost && boost > 0){
 		vspeed = -5;
+		play_audio(sfx_dash, 0, 0);
 		alarm[1] = game_get_speed(gamespeed_fps) * .3;
 		
 		//Soltar o rastro do boost

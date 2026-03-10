@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_musica",
+  "%Name":"sfx_powerDown",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":305.2147,
+  "duration":0.30687076,
   "exportDir":"",
-  "name":"snd_musica",
+  "name":"sfx_powerDown",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_musica.mp3",
-  "volume":0.2,
+  "soundFile":"sfx_powerDown.wav",
+  "volume":1.0,
 }
