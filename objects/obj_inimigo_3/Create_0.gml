@@ -29,6 +29,7 @@ morrendo = function(){
 		vida -= 1;
 		play_audio(sfx_hit, 0, 0);
 	} else{
+		adicionaPontos(1000);
 		sendo_destruido(obj_explosao_inimigo);
 		play_audio(sfx_explosion,0, 0);
 		screenShake(20);

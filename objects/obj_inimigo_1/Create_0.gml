@@ -24,6 +24,7 @@ morrendo = function(){
 	
 	sendo_destruido(obj_explosao_inimigo);
 	screenShake(30);
+	adicionaPontos(100);
 	
 	dropPowerUps();
 }

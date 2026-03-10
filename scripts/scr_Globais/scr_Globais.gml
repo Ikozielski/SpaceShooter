@@ -8,3 +8,5 @@ global.destino = rm_inicio;
 global.transicao = false;
 
 global.velocidadeMaxima = 1;
+
+global.pontos = 0;

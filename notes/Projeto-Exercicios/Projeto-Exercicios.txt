@@ -134,10 +134,14 @@ Mexer no som (Se quiser)
 	Mudar Música do Tutorial/Inicio  - OK 
 
 Sistema de Pontos 
-	Mostrar os Pontos
-	Pegar Power up - 50 Pontos
-	Destruir Power Down
-
+	Mostrar os Pontos - OK
+	Inimigo normal Morto 100 - OK
+	Inimigo 2 Morto - 500 - OK 
+	Inimigo 3 Morto - 1000 - OK 
+	Pegar Power up - 50 Pontos - OK
+	Destruir Power Down - 10 Pontos - OK 
+ 
+ 
 Melhorar o Tutorial
 
 Fazer um BOSS mesmo como final com 50 de vida  e varios ataques doidos, um boss que não vai embora e só ganha se matar ele 

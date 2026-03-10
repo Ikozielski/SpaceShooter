@@ -144,3 +144,7 @@ function flutuar(){
 	    instance_destroy();
 	}
 }
+
+function adicionaPontos(_pontos = 1){
+	global.pontos += _pontos
+}

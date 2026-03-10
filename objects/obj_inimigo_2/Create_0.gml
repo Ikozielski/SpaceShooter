@@ -11,7 +11,7 @@ inicia_efeito_mola();
 inicia_efeito_dano();
 
 //hspeed = random_range(-2, 2);
-hspeed = -1;
+//hspeed = -1;
 
 alarm[0] = game_get_speed(gamespeed_fps) * 2;
 
@@ -50,7 +50,8 @@ morrendo = function(){
 		sendo_destruido(obj_explosao_inimigo);
 		screenShake(30);
 		var _chance = random(100);
-	
+		
+		adicionaPontos(500);
 		dropPowerUps();
 		
 	}
