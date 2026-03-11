@@ -144,12 +144,14 @@ Sistema de Pontos
  
 Melhorar o Tutorial - OK
 
+Fazer uma transição para o BOSS Final
+
 Fazer um BOSS mesmo como final com 50 de vida  e varios ataques doidos, um boss que não vai embora e só ganha se matar ele 
 Mostrar a vida do boss
 
 Fazer um final para o jogo (pensei no jato sair por cima, e mostrar algo na tela) 
 
-criar room de creditos 
+criar room de creditos - (Opção no Menu e ir para os creditos depois que acabar o jogo )
 
 Tirar os debugs/showmessage da tela/Mudar a room inicial
 

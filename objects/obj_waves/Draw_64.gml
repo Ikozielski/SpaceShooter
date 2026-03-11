@@ -6,7 +6,7 @@
 //}
 
 if(boss_spawnado){
-	draw_text(256,250, "FINAL BOSS");
+	//draw_text(256,250, "FINAL BOSS");
 } else {
 	draw_text(256,20, "Wave: " + string(indice));
 }

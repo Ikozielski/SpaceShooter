@@ -25,6 +25,10 @@ function screenShake(_treme = 0){
 	}
 }
 
+function sequenciaScreenShake(){
+	screenShake(40);
+}
+
 
 function inicia_efeito_mola(){
 		xscale = 1;
