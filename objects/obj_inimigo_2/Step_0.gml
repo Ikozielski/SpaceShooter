@@ -7,6 +7,12 @@ if (!in_sequence && criado_em_sequencia) instance_destroy();
 retorna_efeito_mola();
 contador_efeito_dano();
 
+
+
 if (boss){
-	
+	if (y <= 150){
+		vspeed = 1.2;
+	} else{
+		vspeed = 0;
+	}
 }

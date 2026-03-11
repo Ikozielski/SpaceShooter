@@ -152,3 +152,15 @@ function flutuar(){
 function adicionaPontos(_pontos = 1){
 	global.pontos += _pontos
 }
+
+function velocidadeTirosInimigo_2(_speed = 5, _cor = c_white){
+	repeat(random_range(25,30)){
+		play_audio(sfx_laser2, 0, 0);
+		var _tiro = instance_create_layer(x, y, "Projeteis", obj_tiro_inimigo_2);
+		_tiro.speed = _speed;
+		_tiro.image_blend = _cor;
+		_tiro.direction = _angulo;
+		_tiro.image_angle = _angulo + 90;
+		_angulo += 25;
+		}
+}

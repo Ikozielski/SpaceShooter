@@ -146,7 +146,8 @@ Melhorar o Tutorial - OK
 
 Fazer uma transição para o BOSS Final
 
-Fazer um BOSS mesmo como final com 50 de vida  e varios ataques doidos, um boss que não vai embora e só ganha se matar ele 
+Fazer um BOSS mesmo como final com 50 de vida - OK 
+Ataques e Cores do Boss - OK
 Mostrar a vida do boss
 
 Fazer um final para o jogo (pensei no jato sair por cima, e mostrar algo na tela) 

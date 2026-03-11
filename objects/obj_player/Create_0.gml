@@ -1,5 +1,4 @@
-/// @description 
-// Você pode escrever seu código neste editor
+
 
 //Parando de tocar qualquer audio e Tocando a musica do jogo
 audio_stop_all();

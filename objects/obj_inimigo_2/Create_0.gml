@@ -1,6 +1,7 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
+
 criado_em_sequencia = in_sequence;
 
 estados = "chegando";
@@ -20,14 +21,20 @@ atirando = function(){
 	
 	if (global.transicao) exit;
 		if (instance_exists(obj_player)){
-				repeat(30){
-					play_audio(sfx_laser2, 0, 0);
-					var _tiro = instance_create_layer(x, y, "Projeteis", obj_tiro_inimigo_2);
-					_tiro.speed = 5;
-					_tiro.direction = _angulo;
-					_tiro.image_angle = _angulo + 90;
-					_angulo += 25;
-				}
+			if(boss){
+				velocidadeTirosInimigo_2(random_range(.5,9), c_red);	
+			}else{
+				
+				velocidadeTirosInimigo_2();
+				//repeat(30){
+				//	play_audio(sfx_laser2, 0, 0);
+				//	var _tiro = instance_create_layer(x, y, "Projeteis", obj_tiro_inimigo_2);
+				//	_tiro.speed = 5;
+				//	_tiro.direction = _angulo;
+				//	_tiro.image_angle = _angulo + 90;
+				//	_angulo += 25;
+				//}
+			}
 		}
 }
 
