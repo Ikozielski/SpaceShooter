@@ -10,3 +10,5 @@ global.transicao = false;
 global.velocidadeMaxima = 1;
 
 global.pontos = 0;
+
+global.desenhaBarra = false;

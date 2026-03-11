@@ -15,4 +15,11 @@ if (boss){
 	} else{
 		vspeed = 0;
 	}
+	
+	if(vida <= 40 && vida >= 35 && !bossDropou){
+		repeat(5){
+			dropPowerUps();
+		}
+		bossDropou = true;
+	}
 }

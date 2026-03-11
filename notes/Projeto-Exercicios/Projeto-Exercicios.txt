@@ -148,13 +148,17 @@ Fazer uma transição para o BOSS Final
 
 Fazer um BOSS mesmo como final com 50 de vida - OK 
 Ataques e Cores do Boss - OK
-Mostrar a vida do boss
+Mostrar a vida do boss - OK 
+Fazer o Boss da PowerUp antes de morrer - OK
 
 Fazer um final para o jogo (pensei no jato sair por cima, e mostrar algo na tela) 
 
 criar room de creditos - (Opção no Menu e ir para os creditos depois que acabar o jogo )
 
-Tirar os debugs/showmessage da tela/Mudar a room inicial
+Tirar os debugs
+Tirar os showmessage
+Tirar os pontos do tutorial 
+Mudar a room inicial 
 
 
 

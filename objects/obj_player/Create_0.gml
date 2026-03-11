@@ -27,7 +27,7 @@ espera_tiro = 10;
 timer_tiro = 0;
 
 //Vidas - Max 7
-vidas = 500;
+vidas = 5;
 //Escudo - Max 7
 escudos = 3;
 //Boost de Velocidade - Max 3

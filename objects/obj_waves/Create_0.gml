@@ -3,6 +3,8 @@
 
 indice = 9;
 
+
+
 //Criando a minha primeira Wave
 
 //Criando um array com as minhas Waves

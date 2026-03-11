@@ -10,3 +10,4 @@ if(boss_spawnado){
 } else {
 	draw_text(256,20, "Wave: " + string(indice));
 }
+

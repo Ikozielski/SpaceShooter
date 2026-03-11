@@ -6,7 +6,10 @@ criado_em_sequencia = in_sequence;
 
 estados = "chegando";
 
+bossDropou = false;
+
 vida = 10;
+vidaMaximaBoss = 50;
 
 inicia_efeito_mola();
 inicia_efeito_dano();
