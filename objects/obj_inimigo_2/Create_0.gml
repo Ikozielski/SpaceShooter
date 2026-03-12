@@ -8,6 +8,7 @@ estados = "chegando";
 
 bossDropou = false;
 
+
 vida = 10;
 vidaMaximaBoss = 50;
 
@@ -63,6 +64,8 @@ morrendo = function(){
 		
 		adicionaPontos(500);
 		dropPowerUps();
+		
+		
 		
 	}
 	

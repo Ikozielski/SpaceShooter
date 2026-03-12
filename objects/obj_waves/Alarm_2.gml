@@ -4,6 +4,7 @@
 if(!instance_exists(sequenciaBossFinal)){
 	global.desenhaBarra = true;
 	 var _boss = instance_create_layer(145,-64,"Inimigos",obj_inimigo_2);
+
 	 
 
 	
@@ -18,4 +19,8 @@ if(!instance_exists(sequenciaBossFinal)){
 	//corBoss = make_colour_rgb(255,0,0);
 	_boss.image_blend = c_red;
 	_boss.image_alpha = .8;
+	
+	
+	//alarm[3] = game_get_speed(gamespeed_fps) * 3;
+	
 }

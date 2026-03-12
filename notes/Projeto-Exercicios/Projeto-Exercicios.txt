@@ -151,13 +151,16 @@ Ataques e Cores do Boss - OK
 Mostrar a vida do boss - OK 
 Fazer o Boss da PowerUp antes de morrer - OK
 
-Fazer um final para o jogo (pensei no jato sair por cima, e mostrar algo na tela) 
+Fazer um final para o jogo (pensei no jato sair por cima, e mostrar algo na tela) - OK 
 
-criar room de creditos - (Opção no Menu e ir para os creditos depois que acabar o jogo )
-
+Criar e Editar Room de Creditos
+	Opção no Menu - OK 
+	Depois que acabar o jogo mandar para os Creditos 
+	
+	
 Tirar os debugs
 Tirar os showmessage
-Tirar os pontos do tutorial 
+Tirar os pontos do tutorial  - OK
 Mudar a room inicial 
 
 

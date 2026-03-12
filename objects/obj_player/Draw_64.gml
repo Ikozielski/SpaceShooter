@@ -1,7 +1,7 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-draw_text(20, 20 ,"Pontos: " + string(global.pontos));
+if(room == rm_jogo) draw_text(20, 20 ,"Pontos: " + string(global.pontos));
 
 if(global.transicao) exit;
 

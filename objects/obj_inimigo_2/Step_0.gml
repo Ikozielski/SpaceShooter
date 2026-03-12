@@ -7,7 +7,7 @@ if (!in_sequence && criado_em_sequencia) instance_destroy();
 retorna_efeito_mola();
 contador_efeito_dano();
 
-
+show_debug_message(global.bossMorreu);
 
 if (boss){
 	if (y <= 150){
@@ -20,6 +20,11 @@ if (boss){
 		repeat(5){
 			dropPowerUps();
 		}
-		bossDropou = true;
-	}
+		bossDropou = true;	
+	} else if (vida <= .5) global.bossMorreu = true;
+	
+	
+	//if(!instance_exists(obj_inimigo_2)){
+	//	alarm[1] = game_get_speed(gamespeed_fps) * 3;
+	//}
 }
