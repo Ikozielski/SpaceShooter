@@ -3,3 +3,5 @@
 
 
 global.destino = rm_inicio;
+
+global.creditos = true;

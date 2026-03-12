@@ -14,3 +14,5 @@ global.pontos = 0;
 global.desenhaBarra = false;
 
 global.bossMorreu = false;
+
+global.creditos = false;

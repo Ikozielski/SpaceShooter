@@ -1,7 +1,7 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-indice = 9;
+indice = 0;
 
 //Criando a minha primeira Wave
 

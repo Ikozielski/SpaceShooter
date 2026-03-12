@@ -23,6 +23,8 @@ contador_efeito_dano();
 
 boostVelocidade();
 
+if (!instance_exists(obj_creditos)) global.creditos = false;
+
 
 //if(instance_exists(meuEscudo)){
 //	meuEscudo.x = x;

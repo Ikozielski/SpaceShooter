@@ -7,15 +7,19 @@ switch (room){
 
 	case rm_inicio:{
 		play_audio(snd_intro, 0, 1);
-	} break
+	} break;
 	
 	case rm_tutorial:{
 		play_audio(snd_tutorial, 0, 1);
-	} break
+	} break;
+	
+	case rm_creditos:{
+		play_audio(snd_tutorial, 0, 1);
+	}break;
 	
 	case rm_jogo:{
 		audio_play_sound(musica_fundo, 0, 1);
-	} break
+	} break;
 	
 }
 	
@@ -27,7 +31,7 @@ espera_tiro = 10;
 timer_tiro = 0;
 
 //Vidas - Max 7
-vidas = 500;
+vidas = 50;
 //Escudo - Max 7
 escudos = 3;
 //Boost de Velocidade - Max 3
@@ -188,6 +192,7 @@ perde_vida = function(){
 		instance_destroy();
 		instance_create_layer(x, y, "Particulas", obj_explosao_player);
 		screenShake(50);
+		global.pontos = 0;
 		transicao_entrada(x,y);
 		global.transicao = true;
 	}

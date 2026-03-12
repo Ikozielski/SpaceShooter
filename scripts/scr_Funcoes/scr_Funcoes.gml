@@ -164,3 +164,9 @@ function velocidadeTirosInimigo_2(_speed = 5, _cor = c_white){
 		_angulo += 25;
 		}
 }
+
+function gotoCreditos(){
+	global.transicao = true;
+	room_goto(rm_creditos);
+	global.destino = rm_creditos;
+}

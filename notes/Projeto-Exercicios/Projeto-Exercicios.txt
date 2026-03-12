@@ -153,9 +153,9 @@ Fazer o Boss da PowerUp antes de morrer - OK
 
 Fazer um final para o jogo (pensei no jato sair por cima, e mostrar algo na tela) - OK 
 
-Criar e Editar Room de Creditos
+Criar e Editar Room de Creditos - OK
 	Opção no Menu - OK 
-	Depois que acabar o jogo mandar para os Creditos 
+	Depois que acabar o jogo mandar para os Creditos - OK 
 	
 	
 Tirar os debugs
