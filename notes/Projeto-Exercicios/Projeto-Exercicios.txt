@@ -158,10 +158,29 @@ Criar e Editar Room de Creditos - OK
 	Depois que acabar o jogo mandar para os Creditos - OK 
 	
 	
-Tirar os debugs
-Tirar os showmessage
+Tirar os debugs - OK
+Tirar os showmessage - OK 
 Tirar os pontos do tutorial  - OK
-Mudar a room inicial 
+Mudar a room inicial - OK 
 
+--------------------------------------------------------------------------
 
+Consegui Finalizar hoje - 13/03/2026 - Sexta Feira
+	Fiz um pouco mais de funcionalidades que o esperado kkkk, mas acredito que tenha ficado bom 
+	
+Acho que vou dificultar a Wave 9, ta muito facil
+	Coloquei uns 3 inimgos a mais (Aquele Verde chatão) - Talvez nem eu com vida infinita consiga passar kkkkkkkk
+	
+	
+--------------------------------------------------------------------------
 
+Agradeço por ter acompanhado até aqui. 
+Se você está vendo pelo repositório, Vou deixar o contato caso queira dar um feedback ou me contratar. Obrigado! 
+
+email:    contato,iurykozielski@gmail.com
+intagram: iury_kozielski
+youtube:  iurykzk
+discord:  iurykozielski
+donation: livepix.gg/iurykzk
+
+Os créditos dos assets e músicas estão no arquivo Creditos.txt

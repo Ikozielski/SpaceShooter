@@ -14,5 +14,3 @@ _particula.image_angle = random(359);
 adicionaPontos(50);
 
 if (other.boost < 3) other.boost++;
-
-show_debug_message(global.velocidadeMaxima);

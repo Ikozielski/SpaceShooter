@@ -7,7 +7,9 @@ if (!in_sequence && criado_em_sequencia) instance_destroy();
 retorna_efeito_mola();
 contador_efeito_dano();
 
-show_debug_message(global.bossMorreu);
+//show_debug_message(global.bossMorreu);
+
+
 
 if (boss){
 	if (y <= 150){

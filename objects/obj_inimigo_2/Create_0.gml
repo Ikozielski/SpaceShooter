@@ -53,7 +53,7 @@ morrendo = function(){
 		play_audio(sfx_hit, 0, 0);
 	}else {
 		var _camelo = random_pitch(.9, 1.1);
-		show_debug_message(_camelo);
+		//show_debug_message(_camelo);
 
 		//Explodindo
 		play_audio(sfx_explosion, 0,0, , ,_camelo);

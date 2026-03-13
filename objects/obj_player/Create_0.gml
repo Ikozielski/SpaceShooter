@@ -31,7 +31,7 @@ espera_tiro = 10;
 timer_tiro = 0;
 
 //Vidas - Max 7
-vidas = 50;
+vidas = 5;
 //Escudo - Max 7
 escudos = 3;
 //Boost de Velocidade - Max 3
@@ -98,11 +98,22 @@ controla_player = function(){
 	
 	if(keyboard_check_released(ord("E"))) usa_escudo();
 	
-	//Se eu apertei para baixo o level do tiro aumenta
-	if (keyboard_check_pressed(ord("L"))) level_tiro++;
+	#region Debug e Hack
 	
-	if (keyboard_check_pressed(ord("M"))) boost++;
-
+	//Ativando ou Desativando o Debug
+	//if(keyboard_check_released(vk_tab)) global.debug = !global.debug;
+	
+	//Sempre que eu apertar enter, o jogador perder 1 de vida
+	//if (keyboard_check_released(vk_enter)) perde_vida();
+	
+	//Se eu apertei para baixo o level do tiro aumenta
+	//if (keyboard_check_pressed(ord("L"))) level_tiro++;
+	
+	//Se eu apertar M, ganho um Boos de Velocidade
+	//if (keyboard_check_pressed(ord("M"))) boost++;
+	
+	#endregion
+	
 	com_escudo();
 
 	timer_tiro--;

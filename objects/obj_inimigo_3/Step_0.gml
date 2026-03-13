@@ -5,5 +5,6 @@
 maquina_de_estados();
 
 
+
 retorna_efeito_mola();
 contador_efeito_dano();

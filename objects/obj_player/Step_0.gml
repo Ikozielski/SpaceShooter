@@ -10,12 +10,7 @@ controla_player();
 //	level_tiro--;
 //}
 
-//Ativando ou Desativando o Debug
-if(keyboard_check_released(vk_tab)) global.debug = !global.debug;
 
-
-//Sempre que eu apertar enter, o jogador perder 1 de vida
-if (keyboard_check_released(vk_enter)) perde_vida();
 
 retorna_efeito_mola(.4);
 
