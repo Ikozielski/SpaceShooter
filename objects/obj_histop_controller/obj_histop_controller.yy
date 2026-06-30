@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_tiro2_inimigo_3",
+  "%Name":"obj_histop_controller",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_tiro2_inimigo_3",
+  "name":"obj_histop_controller",
   "overriddenProperties":[],
   "parent":{
-    "name":"Tiros",
-    "path":"folders/Objects/Inimigos/Tiros.yy",
+    "name":"Objetos",
+    "path":"folders/Efeitos2/Hitstop/Objetos.yy",
   },
-  "parentObjectId":{
-    "name":"obj_tiro_inimigo_1",
-    "path":"objects/obj_tiro_inimigo_1/obj_tiro_inimigo_1.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_tiro2_inimigo_3",
-    "path":"sprites/spr_tiro2_inimigo_3/spr_tiro2_inimigo_3.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

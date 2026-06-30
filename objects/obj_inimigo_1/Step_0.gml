@@ -14,4 +14,8 @@
 
 //vspeed = random_range(1, 2);
 
+if (global.histop) exit;
+
 if (!in_sequence && criado_em_sequencia) instance_destroy();
+
+metodo_atirando();

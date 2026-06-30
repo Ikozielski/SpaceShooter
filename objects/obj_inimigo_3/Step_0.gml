@@ -2,7 +2,12 @@
 // Você pode escrever seu código neste editor
 
 
+if (global.histop) exit;
+
 maquina_de_estados();
+
+x += velocidadeX;
+y += velocidadeY;
 
 
 

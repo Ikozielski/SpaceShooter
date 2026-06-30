@@ -1,5 +1,7 @@
 global.maxLevel = 3;
 
+global.histop = false;
+
 global.debug = true;
 
 //Desfinindo o destino que a transicao vai levar 

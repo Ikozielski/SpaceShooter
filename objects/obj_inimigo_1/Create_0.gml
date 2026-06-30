@@ -6,7 +6,17 @@ criado_em_sequencia = in_sequence;
 
 //hspeed = random_range(-2, 2);
 
-alarm[0] = game_get_speed(gamespeed_fps) * 2;
+espera_tiro = game_get_speed(gamespeed_fps) * 2;
+timer_tiro = espera_tiro;
+
+metodo_atirando = function(){
+	timer_tiro--;
+	if (timer_tiro <= 0) {
+		atirando();
+		espera_tiro = game_get_speed(gamespeed_fps) * random_range(1, 2);
+		timer_tiro = espera_tiro;
+	}
+}
 
 atirando = function(){
 	if(global.transicao) exit;

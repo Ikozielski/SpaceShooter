@@ -31,7 +31,7 @@ espera_tiro = 10;
 timer_tiro = 0;
 
 //Vidas - Max 7
-vidas = 500;
+vidas = 5;
 //Escudo - Max 7
 escudos = 3;
 //Boost de Velocidade - Max 3
@@ -215,8 +215,7 @@ usa_escudo = function(){
 		escudos--;
 		
 		meuEscudo = instance_create_layer(x, y, "Escudo", obj_escudo);
-		meuEscudo.alarm[0] = tempo_invencivel;
-		alarm[0] = tempo_invencivel;
+		meuEscudo.timer_expira = tempo_invencivel;
 		timer_invencivel = tempo_invencivel;
 	}
 }

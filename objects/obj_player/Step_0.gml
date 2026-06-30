@@ -1,6 +1,8 @@
 /// @description 
 // Você pode escrever seu código neste editor
 
+if (global.histop) exit;
+
 controla_player();
 
 //Mudando o valor do level do meu tiro

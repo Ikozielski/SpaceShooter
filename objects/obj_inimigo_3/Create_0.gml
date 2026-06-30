@@ -10,6 +10,9 @@ contador_tiro = 0;
 
 decidi_direcao = false;
 
+velocidadeX = 0;
+velocidadeY = 0;
+
 inicia_efeito_mola();
 inicia_efeito_dano();
 
@@ -56,15 +59,19 @@ maquina_de_estados = function(){
 	
 	switch(estado){
 		case "chegando":{
-			if (y <= 184){
-				vspeed = 1.2;
-			} else{
-				estado = "carregando";
-			  }
+			if (y < 184){
+				velocidadeY = lerp(velocidadeY, 1.2, .05);
+			} else {
+				velocidadeY = lerp(velocidadeY, 0, .1);
+				if (abs(velocidadeY) < 0.05){
+					velocidadeY = 0;
+					estado = "carregando";
+				}
+			}
 		} break;
-		
+
 		case "carregando":{
-			vspeed = 0;
+			velocidadeY = 0;
 			
 			timer_tiro++;
 			
@@ -89,12 +96,13 @@ maquina_de_estados = function(){
 			
 			if (instance_exists(obj_player)){
 				play_audio(sfx_laser2, 0, 0);
+				var _velocidade = 2;
 				var _tiro = instance_create_layer(x, y, "Projeteis", obj_tiro1_inimigo_3);
-				_tiro.speed = 2;
-				_tiro.direction = _direcao;
+				_tiro.velocidadeMaximaX = lengthdir_x(_velocidade, _direcao);
+				_tiro.velocidadeMaximaY = lengthdir_y(_velocidade, _direcao);
 				_tiro.image_angle = _direcao + 90;
 				estado = "carregando";
-				
+
 				boss_foge();
 			}
 			
@@ -107,11 +115,12 @@ maquina_de_estados = function(){
 			
 			//Fazer o tiro b ir pra baixo, e depois voltar a carregar 
 			if (instance_exists(obj_player)){
+				var _velocidade = 4;
 				repeat(3){
 					play_audio(sfx_laser2, 0, 0);
 					var _tiro = instance_create_layer(x, y, "Projeteis", obj_tiro2_inimigo_3);
-					_tiro.speed = 4;
-					_tiro.direction = _angulo;
+					_tiro.velocidadeMaximaX = lengthdir_x(_velocidade, _angulo);
+					_tiro.velocidadeMaximaY = lengthdir_y(_velocidade, _angulo);
 					_angulo += 25;
 				}
 				boss_foge();
@@ -120,16 +129,16 @@ maquina_de_estados = function(){
 		} break;
 		
 		case "fugindo":{
-			
+
 			if(!decidi_direcao){
-				hspeed = choose(-1, 1);
+				var _angulo = random(360);
+				velocidadeX = lengthdir_x(2, _angulo);
+				velocidadeY = lengthdir_y(2, _angulo);
 				decidi_direcao = true;
 			}
-			
-			vspeed = -2;
-			
-			if ( y <= -100) instance_destroy();
-			
+
+			if (y <= -100 || y >= room_height + 100 || x <= -100 || x >= room_width + 100) instance_destroy();
+
 		} break;
 		
 		
